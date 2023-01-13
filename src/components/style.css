@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+:root {
+    --white: #fff;
+    --font-color: #262626;
+    --green: #1DBF73;
+    --main-bg: #fafafa;
+    --border: #dbdbdb;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Globals*/
+h1{
+    font-size: 2.6em;
+}
+h2{
+    font-size: 2em;
+}
+h3{
+    font-size: 1.6em;
+}
+h4{
+    font-size: 1.2em;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.container{
+    width: 60%;
+    margin: 0 auto;
+}
+body{
+    /* background-color: red; */
+    color: var(--font-color);
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    background-color: var(--main-bg);
+}
+@media screen and (min-width: 3400px) {
+    .container{
+        width: 32%;
+    }
+}
+@media screen and (min-width: 2400px) {
+    .container{
+        width: 40%;
+    } 
+}
+@media screen and (min-width: 1900px) {
+    .container{
+        width: 50%;
+    } 
+}
+@media screen and (min-width: 1600px) {
+    .container{
+        width: 55%;
+    } 
+}
+@media screen and (max-width: 1200px) {
+    .container{
+        width: 70%;
+    } 
+}
+@media screen and (max-width: 992px) {
+    .container{
+        width: 85%;
+    } 
+}
+@media screen and (max-width: 768px) {
+    .container{
+        width: 80%;
+    }
+    .main-right{
+        display: none;
+    }
+
+    /* For profile Component */
+    .profile-main>.container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .profile-main>.container .main-right{
+        display: block;
+        margin-left: 0;
+        margin-bottom: 3em;
+    }
+}
+@media screen and (max-width: 620px) {
+    .container{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 576px) {
+    body{
+        font-size: 13px;
+        line-height: 16px;
+    }
+}

@@ -1,0 +1,69 @@
+.auth-main{
+    min-height: 600px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .9em;
+}
+.form-container{
+    width: 350px;
+}
+.auth-form-upper{
+    width: 100%;
+    border: 1px solid var(--border);
+    background-color: var(--white);
+    padding: 2em 3em;
+}
+.auth-form-upper .logo-img{
+    display: block;
+    margin: 0 auto 2.5em auto;
+    width: 160px;
+}
+.register-descript{
+    text-align: center;
+    color: #888;
+    font-size: 1.3em;
+    font-weight: 500;
+    padding-bottom: 1em;
+    border-bottom: 2px solid var(--border);
+    margin-bottom: 1em;
+}
+.auth-form-upper input, .auth-form-upper button{
+    width: 100%;
+    outline: none;
+    border: 1px solid var(--border);
+    background-color: var(--main-bg);
+    padding: .7em;
+    margin: 3px 0;
+}
+.auth-form-upper button{
+    border: none;
+    background-color: var(--green);
+    color: var(--white);
+    font-weight: 600;
+    padding: .55em;
+    margin: 14px 0 25px;
+}
+.forget-password{
+    border-top: 1px solid var(--border);
+    padding: 25px 0 0;
+    text-align: center;
+}
+.terms-accept{
+    font-size: .9em;
+    color: #999;
+    text-align: center;
+}
+.auth-lower{
+    text-align: center;
+    margin-top: 10px;
+    background-color: var(--white);
+    border: 1px solid var(--border);
+    padding: 2em 3em;
+    font-size: 1.2em;
+}
+.register-form-error{
+    color: rgb(225, 30, 30);
+    font-size: .87em;
+}

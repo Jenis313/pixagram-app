@@ -1,0 +1,52 @@
+/* Special/trending section */
+/* .home-main{
+    margin-top: 5em;
+    padding-top: .8em;
+} */
+.home-main>.container{
+    display: flex;
+    justify-content: space-between;
+}
+.main-left{
+    flex: 5;
+}
+
+/* Create new location */
+.create-new-location{
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    background-color: var(--white);
+    border: 1px solid var(--border);
+}
+
+/* This is inside */
+.create-new-location-profile-container{
+    margin-right: 1em;
+}
+.create-new-location-btn{
+    text-align: center;
+    flex: 1;
+    background-color: var(--main-bg);
+    padding: .3em 1em;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+}
+.create-new-location-btn a{
+    color: var(--green);
+    font-size: 1.1em;
+    font-weight: 500;
+}
+div.infinite-scroll-component{
+    overflow: hidden !important;
+    /* There will be a scroll bar in the last scroll if we don't do this */
+}
+
+
+
+/* Media quries */
+@media screen and (max-width: 576px) {
+    .create-new-location{
+        padding: .5em;
+    }
+}

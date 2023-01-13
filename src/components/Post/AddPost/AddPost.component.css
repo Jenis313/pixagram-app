@@ -1,0 +1,106 @@
+.new-post-main>.container{
+    display: flex;
+    justify-content: space-between;
+}
+.new-post-main .main-left h1{
+    font-size: 1.3em;
+    font-weight: 400;
+    margin-bottom: 1em;
+}
+.post-form-container{
+    background-color: var(--white);
+    padding: 1em;
+    margin-bottom: 2em;
+}
+.post-form-container input, .post-form-container textarea{
+    outline: none;
+    border: 1px solid var(--border);
+    display: block;
+    width: 100%;
+    padding:1em;
+}
+.input-container-post{
+    margin: 1em 0;
+}
+.upload-image{
+    border: 2px dashed var(--border);
+    padding: 2em 1em 3em 1em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.upload-image label{
+    cursor: pointer;
+    display: block;
+    align-self:center;
+    background-color: var(--green);
+    color: var(--white);
+    padding: .4em 1em;
+    border-radius: 4px;
+}
+.upload-image input {
+    display: none;
+  }
+.upload-image p{
+    font-size: 1.2em;
+    margin: .3em 0 1.2em;
+}
+.upload-image .icon{
+    font-size: 100px;
+    font-weight: 200;
+    color: var(--green);
+}
+.previewImageAddPost{
+    margin: 1em auto;
+    width: 150px;
+    text-align: center;
+    position: relative;
+}
+.previewImageAddPost> i{
+    position: absolute;
+    top: -1.2em;
+    right: -1.2em;
+    font-size: 1.4em;
+    font-weight: 100;
+    color: var(--green);
+}
+.previewImageAddPost>img{
+    width: 100%;
+}
+.post-tags-cont label{
+    display: block;
+    font-size: .87em;
+    margin-top: 1.5em;
+    margin-bottom: .5em;
+    font-weight: 300;
+}
+#post-submit{
+    width: 100%;
+    background-color: var(--green);
+    outline: none;
+    border: none;
+    padding: .8em 1em;
+    color: var(--white);
+    font-weight: 600;
+    font-size: 1.1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.login-req-new-post{
+    padding-bottom: 1em;
+    font-size: 1.6em;
+    font-weight: 400;
+}
+.post-form-no-auth{
+    text-align: center;
+    padding: 5em 0;
+}
+.no-auth-post-image i{
+    font-size: 22em;
+    color: var(--border)
+}
+@media screen and (max-width: 576px) {
+    .no-auth-post-image i{
+        font-size: 12em;
+    }
+}

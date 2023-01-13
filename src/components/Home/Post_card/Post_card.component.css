@@ -1,0 +1,75 @@
+.post{
+    background-color: var(--white);
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border: 1px solid var(--border);
+}
+.bigPost{
+
+    /* if the div has bigPost class that means it is being rendered in Post Component and there is no need to put border and margins but other things are exactly the same and in here(css) .bigPost must be under .post otherwise .post overrides */
+    border: none;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.post-user{
+    display: flex;
+    align-items: center;
+    padding:1em;
+    border-bottom: 1px solid var(--border);
+}
+
+.post-user .post-card-profile-username{
+    display: block;
+}
+.post-description{
+    padding: 1em;
+}
+.location-name{
+    margin-bottom: .6em;
+}
+.post-description p{
+    font-size: 1.1em;
+    color: #666;
+}
+.interact{
+    border-top:1px solid var(--border);
+    padding: 1em 5em;
+    margin: 0 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.post-interact{
+    display: flex;
+    align-items: center;
+}
+.post-interact-icon{
+    font-size: 1.3em;
+    font-weight: 100;
+    margin-right: .2em;
+}
+.post-like-count{
+    font-size: .9em;
+    font-weight: 500;
+}
+.post-liked{
+    color: var(--green);
+    pointer-events: none;
+}
+
+@media screen and (max-width: 768px) {
+    .interact{
+        padding: 1em 3em;
+    }
+    
+}
+@media screen and (max-width: 576px) {
+    .interact{
+        padding: 1em 1.5em;
+    }
+}
+@media screen and (max-width: 390px) {
+    .interact{
+        padding: 1em .8em;
+    }
+}

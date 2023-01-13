@@ -1,0 +1,31 @@
+/* Right flex */
+
+.main-right{
+    flex: 2;
+    margin-left: 2em;
+}
+.footer{
+    background-color: var(--white);
+    width: 100%;
+    border: 1px solid var(--border);
+    padding: 1em;
+    font-size: .87em;
+    letter-spacing: .05em;
+}
+.footer *{
+    color: #666;
+}
+.footer-main-cont{
+    display: flex;
+    justify-content: space-between;
+    margin:1em .5em;
+}
+.footer-main-cont li{
+    line-height: 1.7em;
+}
+.footer-left{
+    flex: 1;
+}
+.footer-right{
+    flex: 1;
+}

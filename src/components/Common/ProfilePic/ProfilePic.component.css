@@ -1,0 +1,32 @@
+.profile-pic-container{
+    margin-right: 1em;
+}
+.profile-pic-container a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profilePic-img-with-outline{
+    border-radius: 50%;
+    outline: 1px solid var(--green);
+    border: .2em solid #fff;
+    object-fit: cover;
+}
+.profilePic-img-without-outline{
+    border-radius: 50%;
+    padding: .5em;
+    object-fit: cover;
+}
+@media screen and (max-width: 576px) {
+    .interact{
+        padding: 1em 1.5em;
+    }
+    .profile-pic-container .profilePic-img-with-outline{
+        width: 35px !important;
+        height: 35px !important;
+    }
+    .profile-pic-container .profilePic-img-without-outline{
+        width: 40px !important;
+        height: 40px !important;
+    }
+}

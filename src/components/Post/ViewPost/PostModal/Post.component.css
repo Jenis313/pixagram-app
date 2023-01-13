@@ -1,0 +1,134 @@
+/* Half of the style for this page will be done form Post_card.controller.css */
+
+.comments-main>.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Commennts */
+.comments-main{
+    background-color: rgba(28,28,28,.9);;
+}
+.comments-main>.container{
+    width: 86%;
+    background-color: var(--main-bg);
+    padding: 2em 5em;
+}
+.comments-main .interact{
+    padding: 1em 4em;
+    margin: 0 2em;
+    border-bottom: 1px solid var(--border);
+}
+.comments-main .post-user{
+    padding: 1em 2em;
+}
+.comments-main .post-description{
+    padding: 1.5em 2em;
+}
+.comments-main .location-name{
+    font-size: 1.5em;
+}
+
+.write-comment{
+    padding: 1.5em 0;
+    border-bottom: 1px solid var(--border);
+    margin: 0 2em
+}
+.commenter-name{
+    font-size: .87em;
+    color: #000;
+    margin-bottom: .35em;
+}
+.write-comment form{
+    border: 1px solid #dfdfdf;
+}
+.cmt-message>textarea{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 1em 1.5em;
+}
+.cmt-submit{
+    background-color: var(--main-bg);
+    text-align: right;
+    padding: 1em 1.5em;
+}
+.cmt-enter{
+    background-color: var(--green);
+    outline: none;
+    border: none;
+    border-radius: 25px;
+    padding: .3em 1em;
+    color: var(--white);
+}
+.comment-profile{
+    width: 45px;
+    height: 45px;
+    margin-right: .3em;
+}
+.comments-container{
+    padding: .5em 2em 1em;
+}
+.indiv-comment{
+    display: flex;
+    margin: 1.3em 0;
+
+}
+.comment-and-name{
+    background-color: var(--main-bg);
+    padding: .87em 1em;
+    border-radius: 25px;
+}
+.comment-and-name h5{
+    font-size: .95em;
+}
+.comment-and-name small{
+    display: block;
+    color: #777;
+    margin: .3em 0 .6em;
+}
+
+
+
+/* Media queries */
+@media screen and (min-width: 3400px) {
+    .comments-main>.container{
+        width: 38%;
+    } 
+}
+@media screen and (min-width: 2400px) {
+    .comments-main>.container{
+        width: 50%;
+    } 
+}
+@media screen and (min-width: 1900px) {
+    .comments-main>.container{
+        width: 60%;
+    }
+}
+@media screen and (min-width: 1600px) {
+    .comments-main>.container{
+        width: 66%;
+    }
+}
+@media screen and (max-width: 576px) {
+    .comments-main>.container{
+        display: block;
+        width: 96%;
+        padding: 1em 1em;
+    }
+    .comments-main .interact{
+        padding: 1em 1.5em;
+    }
+}
+@media screen and (max-width: 390px) {
+ 
+    .comments-main .interact{
+        padding: 1em .8em;
+    }
+}
+@media screen and (max-width: 280px) {
+    .comments-main .interact{
+        padding: 1em .3em;
+    }
+}

@@ -1,0 +1,2 @@
+REACT_APP_BASE_URL = http://localhost:{your_backend_port}/api
+REACT_APP_IMG_URL = http://localhost:{your_backend_port}/file/images/

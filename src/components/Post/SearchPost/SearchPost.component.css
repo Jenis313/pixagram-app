@@ -1,0 +1,6 @@
+
+@media screen and (max-width: 576px) {
+    .home-main .main-left>h2, .home-main .main-left h1{
+        font-size: 1.5em;
+    }
+}

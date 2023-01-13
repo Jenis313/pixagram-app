@@ -1,0 +1,97 @@
+.edit-profile-main>.container{
+    display: flex;
+    justify-content: space-between;
+}
+.edit-profile-main .main-left>h1{
+    font-size: 1.3em;
+    margin-bottom: 1em;
+    font-weight: 400;
+
+}
+.edit-name{
+    margin-bottom: 1.5em;
+}
+.edit-name>label{
+    border-bottom: 1px solid #eee;
+    display: block;
+    margin-bottom: 1em;
+    padding-bottom: .5em;
+    font-size: .9em;
+    color: #555;
+}
+.edit-name input{
+    width: 100%;
+    padding: .9em 1em;
+    outline: none;
+    color: #000;
+}
+.edit-image p{
+    font-size: 1.2em;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 1em;
+    padding-bottom: .5em;
+    font-size: .9em;
+    color: #555;
+
+}
+.edit-image-cont{
+    display: flex;
+}
+.edit-image img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover; /*keeps its aspect ratio and fills the given dimension : https://www.w3schools.com/css/css3_object-fit.asp*/
+    border-radius: 50%;
+    margin-right: 2em;
+}
+.edit-image-right{
+    border: 2px dashed var(--border);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    background-color: #fff;
+}
+.edit-image label{
+    cursor: pointer;
+    display: block;
+    align-self:center;
+    background-color: var(--green);
+    color: var(--white);
+    padding: .4em 1em;
+    border-radius: 4px;
+}
+.edit-image input {
+    display: none;
+  }
+
+/*  */
+
+#profile-submit{
+    margin-top: 2em;
+    width: 100%;
+    background-color: var(--green);
+    outline: none;
+    border: none;
+    padding: .8em 1em;
+    color: var(--white);
+    font-weight: 600;
+    font-size: 1.1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 576px) {
+    .profile-edit-form-cont{
+        width: 100%;
+    }
+    .edit-profile-main>.container{
+        display: block;
+    }
+    #profile-submit{
+        padding: .6em 1em;
+        font-weight: 500;
+        font-size: 1em;
+    }
+}
